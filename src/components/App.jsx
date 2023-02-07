@@ -7,7 +7,7 @@ import { selectUsers } from 'redux/users/usersSelector';
 import { UsersList } from './UsersList/UsersList';
 
 export const App = () => {
-  const [ setIsListShow] = useState(false);
+  const [isListShow, setIsListShow] = useState(false);
   const dispatch = useDispatch();
   const users = useSelector(selectUsers);
   console.log(users);
