@@ -10,7 +10,7 @@ export const App = () => {
   const [isListShow, setIsListShow] = useState(false);
   const dispatch = useDispatch();
   const users = useSelector(selectUsers);
-  console.log(users);
+  // console.log(users);
 
   const showUsersList = () => {
     setIsListShow(true);
@@ -23,4 +23,5 @@ export const App = () => {
       <UsersList users={users} />
     </>
   );
+
 };
